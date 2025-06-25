@@ -1,0 +1,26 @@
+{
+  "name": "free-fire-game",
+  "version": "1.0.0",
+  "description": "Free Fire-style 2D game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.danydon.freefire",
+    "productName": "FreeFireGame",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "splashScreen": {
+      "image": "splash.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}
